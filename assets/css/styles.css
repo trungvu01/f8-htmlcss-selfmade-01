@@ -8,9 +8,100 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
-    --primary-color: #ffb900;
-    --font-heading: "Sen", sans-serif;
+    --primary-color: #1ebfc1;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    min-width: 186px;
+    border-radius: 14px;
+    padding: 0 16px;
+    color: #fff;
+    background: var(--primary-color);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 68px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ============= Header ============= */
+.header {
+    background-color: #fff;
+    padding-top: 44px;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -44px;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav-link {
+    padding: 8px 16px;
+    color: #2f3a3b;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.header .nav-link:not(.active):hover {
+    text-shadow: 0.5px 0 0 #2f3a3b;
+}
+
+.header .nav-link.active {
+    font-weight: 600;
+}
+
+.header .aciton {
+    display: flex;
+    align-items: center;
+}
+
+.header .action-btn {
+    min-width: 108px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.header .signin-btn {
+    background-color: transparent;
+    color: #494949;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.header .signup-btn {
+    background-color: transparent;
+    border-radius: 6px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }

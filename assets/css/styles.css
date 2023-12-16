@@ -607,12 +607,7 @@ a {
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
-}
-
-.feedback .controls button:hover {
-    opacity: 0.9;
     cursor: pointer;
-    background-color: red;
 }
 
 .feedback .avatar-group {

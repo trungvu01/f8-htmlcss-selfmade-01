@@ -634,3 +634,35 @@ a {
     position: unset;
     margin: auto;
 }
+
+/* ============= Cta ============= */
+.cta {
+    background-color: #def6f5;
+    padding: 76px 0 88px;
+}
+
+.cta .main-content {
+    width: 1024px;
+    max-width: 1024px;
+    transform: translateX(-73px);
+}
+
+.cta .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta .info {
+    flex: 1;
+    max-width: 50%;
+}
+
+.cta .heading {
+    margin-bottom: 18px;
+}
+
+.cta .heading,
+.cta .desc {
+    line-height: normal;
+}

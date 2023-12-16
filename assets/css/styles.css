@@ -345,7 +345,7 @@ a {
 .features {
     background-color: #fff;
     padding: 40px 0;
-    margin: 90px 0;
+    margin: 90px 0 50px;
 }
 
 .features .main-content {
@@ -390,4 +390,147 @@ a {
 
 .features .item .desc {
     color: #9da6a5;
+}
+
+/* ============= Popular ============= */
+.popular {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.popular .head {
+}
+
+.popular .heading {
+    margin: 18px 0;
+}
+
+.popular .head .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .head .row .desc {
+    max-width: 45%;
+}
+
+.popular .head .row .view-more {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.popular .list {
+    display: flex;
+    margin-top: 79px;
+    gap: 0 47px;
+}
+
+.popular .list .item {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular .item .img {
+    width: 100%;
+    min-width: 359px;
+    height: 393px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    opacity: 0.35;
+    background: #d0efed;
+    transition: all 0.3s ease;
+}
+
+.popular .item:hover .img,
+.popular .item:hover .info {
+    opacity: 1;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular .item .info {
+    position: absolute;
+    bottom: -124px;
+    width: 325px;
+    max-width: 325px;
+    padding: 18px 25px 29px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.popular .item .info .heading {
+    margin: 0 0 16px;
+}
+
+.popular .item .info .heading a {
+    color: #0d1111;
+}
+
+.popular .item .info .price {
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.popular .item .info .price strong {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.popular .item .info .desc {
+    color: #9da6a5;
+    line-height: normal;
+    margin: 6px 0 18px;
+}
+
+.popular .item .info .value-group {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.popular .item .info .value-group .desc {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.popular .item .info .value-group .desc::before {
+    display: inline-block;
+    margin-right: 10px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+/* ============= Stats ============= */
+.stats {
+    margin: 309px 0 224px;
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.stats .main-content {
+    width: 862px;
+    max-width: 862px;
+}
+
+.stats .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats .list .item {
+    text-align: center;
 }

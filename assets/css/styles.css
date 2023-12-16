@@ -444,7 +444,7 @@ a {
     object-fit: cover;
     object-position: center;
     border-radius: 8px;
-    opacity: 0.35;
+    opacity: 0.75;
     background: #d0efed;
     transition: all 0.3s ease;
 }
@@ -664,5 +664,69 @@ a {
 
 .cta .heading,
 .cta .desc {
+    line-height: normal;
+}
+
+/* ============= Footer ============= */
+.footer {
+    padding: 130px 0 50px;
+    background-color: #fff;
+}
+.footer .list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer .item + .item {
+    flex: 1;
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .item .title {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.footer .item .desc,
+.footer .item .social-group {
+    color: #535353;
+    line-height: normal;
+}
+
+.footer .item .desc + .desc,
+.footer .item .social-group + .social-group {
+    margin-top: 20px;
+}
+
+.footer .item .social-group {
+    display: flex;
+    align-items: center;
+}
+
+.footer .item .social-group .icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.footer .item .social-group .desc {
+    padding-left: 10px;
+}
+
+.footer .copyright {
+    margin-top: 80px;
+    text-align: center;
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    font-weight: 400;
     line-height: normal;
 }

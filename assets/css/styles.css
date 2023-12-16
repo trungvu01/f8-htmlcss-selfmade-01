@@ -27,6 +27,25 @@ a {
     margin-right: auto;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+.name-content {
+    color: #767e7e;
+    font-size: 1.2rem;
+    letter-spacing: 0.55rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
 .btn {
     display: inline-block;
     min-width: 186px;
@@ -324,4 +343,55 @@ a {
 
 .hero .media-block .cart-avt .avata + .avata {
     margin-left: -7px;
+}
+
+/* ============= Features ============= */
+.features {
+    background-color: #fff;
+    padding: 40px 0;
+    margin: 90px 0;
+}
+
+.features .main-content {
+    width: 1024px;
+    max-width: 1024px;
+    transform: translateX(-73px);
+}
+
+.features .head {
+    width: 56%;
+    max-width: 56%;
+    margin-bottom: 80px;
+}
+
+.features .heading {
+    margin: 18px 0;
+}
+
+.features .head .desc {
+    line-height: normal;
+}
+
+.features .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features .list .item {
+    flex: 1;
+    max-width: 224px;
+    display: flex;
+    flex-direction: column;
+}
+
+.features .item .title {
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 26px 0 16px;
+}
+
+.features .item .desc {
+    color: #9da6a5;
 }

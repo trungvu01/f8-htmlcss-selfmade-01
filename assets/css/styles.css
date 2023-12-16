@@ -34,10 +34,6 @@ a {
     overflow: hidden;
 }
 
-.break-all {
-    word-break: break-all;
-}
-
 .name-content {
     color: #767e7e;
     font-size: 1.2rem;
@@ -359,8 +355,8 @@ a {
 }
 
 .features .head {
-    width: 56%;
-    max-width: 56%;
+    width: 58%;
+    max-width: 58%;
     margin-bottom: 80px;
 }
 
